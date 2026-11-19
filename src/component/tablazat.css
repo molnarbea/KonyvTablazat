@@ -1,0 +1,17 @@
+th{
+    background-color: black;
+    color: white;
+    padding: 10px;
+}
+
+table{
+    justify-content: center;
+    margin: auto;
+    border: 1px solid gray;
+}
+
+td{
+    border: 1px solid gray;
+    border-collapse: collapse;
+    padding: 10px;
+}

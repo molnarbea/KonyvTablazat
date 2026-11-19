@@ -1,0 +1,78 @@
+.uj-konyv{
+    width: 40%;
+    min-width: 360px;
+    max-width: 520px;
+    margin: 0 auto 32px;
+    border: 1px solid gray;
+}
+
+.uj-konyv h2{
+    margin: 0;
+    padding: 10px;
+    background: black;
+    color: white;
+}
+
+.uj-konyv form{
+    display: flex;
+    flex-direction: column;
+}
+
+.form-mezo{
+    display: grid;
+    grid-template-columns: 35% minmax(0, 1fr);
+    border-bottom: 1px solid gray;
+}
+
+.form-mezo label{
+    padding: 10px;
+    background: black;
+    color: white;
+    text-align: left;
+}
+
+.form-mezo input{
+    box-sizing: border-box;
+    width: 100%;
+    min-width: 0;
+    padding: 8px 10px;
+    border: 0;
+    border-left: 1px solid gray;
+    border-radius: 0;
+    background: var(--bg);
+    color: var(--text-h);
+    font: inherit;
+}
+
+.form-mezo input:focus-visible{
+    outline: 2px solid var(--accent);
+    outline-offset: 2px;
+}
+
+.uj-konyv form input[type="submit"]{
+    min-height: 44px;
+    padding: 10px;
+    border: 0;
+    background: black;
+    color: white;
+    font: inherit;
+    cursor: pointer;
+    transition: opacity 160ms ease;
+}
+
+.uj-konyv form input[type="submit"]:hover{
+    opacity: 0.82;
+}
+
+.uj-konyv form input[type="submit"]:focus-visible{
+    outline: 2px solid var(--accent);
+    outline-offset: 3px;
+}
+
+@media (max-width: 600px){
+    .uj-konyv{
+        box-sizing: border-box;
+        width: calc(100% - 32px);
+        min-width: 0;
+    }
+}
